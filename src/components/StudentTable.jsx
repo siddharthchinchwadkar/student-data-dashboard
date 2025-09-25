@@ -7,7 +7,7 @@ import {
 
 const subjects = ["Math", "Science", "English", "History", "Geography"];
 
-// Map division to colors
+
 const divisionColors = {
   First: "success",
   Second: "primary",
