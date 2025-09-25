@@ -12,7 +12,6 @@ export default function App() {
   const [filterDivision, setFilterDivision] = useState('All');
   const [modal, setModal] = useState({ open:false, title:'', message:'', onConfirm: null, showCancel:false });
 
-  // Helper functions
   const parseMarks = (marksArr) => marksArr.map(m => Number.isFinite(Number(m)) ? Number(m) : 0);
   const calculateTotals = (marksArr) => {
     const parsed = parseMarks(marksArr);
@@ -30,7 +29,6 @@ export default function App() {
     return errors;
   };
 
-  // Handlers
   const handleSubmit = (e)=>{
     e.preventDefault();
     const errors = validateForm(formData);
